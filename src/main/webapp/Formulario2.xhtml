@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+
+<h:body>
+     <div class="card">
+    <h5>Margin</h5>
+    <h6>Without Spacing</h6>
+    <p:commandButton type="button" value="Button 1" style="width:20rem" />
+    <p:commandButton type="button" value="Button 2" style="width:20rem" />
+
+    <h6>With Spacing</h6>
+    <p:commandButton type="button" value="Button 1" style="width:20rem" styleClass="p-mr-2 p-mb-2" />
+    <p:commandButton type="button" value="Button 2" style="width:20rem" styleClass="p-mb-2"/>
+
+    <h5>Responsive Margin</h5>
+    <h6>Without Spacing</h6>
+    <div class="p-grid p-formgrid ui-fluid">
+        <div class="p-col-12 p-lg-4">
+            <p:inputText />
+        </div>
+        <div class="p-col-12 p-lg-4">
+            <p:inputText />
+        </div>
+        <div class="p-col-12 p-lg-4">
+            <p:inputText />
+        </div>
+    </div>
+
+    <h6>With Spacing</h6>
+    <div class="p-grid p-formgrid ui-fluid">
+        <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+            <p:inputText />
+        </div>
+        <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+            <p:inputText />
+        </div>
+        <div class="p-col-12 p-mb-2 p-lg-4 p-mb-lg-0">
+            <p:inputText />
+        </div>
+    </div>
+
+    <h6>Center</h6>
+    <div class="demo-container p-p-4">
+        <p:commandButton type="button" value="Button" styleClass="p-d-block p-mx-auto" />
+    </div>
+</div>
+
+<div class="card">
+    <h5>Padding</h5>
+    <h6>Without Spacing</h6>
+    <div class="demo-container">
+        <p:commandButton type="button" value="Button" />
+    </div>
+
+    <h6>With Spacing</h6>
+    <div class="demo-container p-p-3">
+        <p:commandButton type="button" value="Button" />
+    </div>
+
+    <h6>Responsive Spacing</h6>
+    <div class="demo-container p-p-0 p-p-sm-1 p-p-md-2 p-p-lg-3">
+        <p:commandButton type="button" value="Button" />
+    </div>
+</div>
+
+</h:body>
+</html>
+

@@ -7,8 +7,27 @@
 </h:head>
 
 <h:body>
-     <div class="card">
+     <style type="text/css">
+    .ui-analog-clock {
+        width: 200px;
+    }
+</style>
+
+<div class="card">
     <h:form>
+        <h5 class="p-mt-0">Client</h5>
+        <p:clock />
+
+        <h5>Server</h5>
+        <p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server"/>
+
+        <h5>Custom</h5>
+        <p:clock mode="server" value="#{clockView.dateTime}"/>
+
+        <h5>Analog</h5>
+        <p:clock displayMode="analog"/>
+    </h:form>
+</div>
         
 
 </h:body>

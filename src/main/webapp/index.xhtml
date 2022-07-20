@@ -27,6 +27,18 @@
         <h5>Analog</h5>
         <p:clock displayMode="analog"/>
     </h:form>
+    
+    
+    <div class="card">
+    <h:form>
+        <p:fileUpload listener="#{fileUploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
+                      multiple="true" update="messages" sizeLimit="10000000" fileLimit="3"
+                      allowTypes="/(\.|\/)(gif|jpe?g|png)$/"
+                      maxChunkSize="1000000"/>
+
+        <p:growl id="messages" showDetail="true" keepAlive="true"/>
+    </h:form>
+</div>
 </div>
         
 
